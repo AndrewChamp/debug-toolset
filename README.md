@@ -20,11 +20,13 @@ public $development = array(
 ```
 
 ### Output array
+This method will output your array in '<pre>' tags for readability.  Like all the other methods & properties in this class, this output is only visible to the IP's listed in the $development array.
 ```php
 $debug->printArray($myArray);
 ```
 
 ### Halt processing if a PHP version is required
+If your script / framework requires a PHP version minimum then you can use this method to enforce it.
 ```php
 $debug->versionCheck('5.3.0');
 ```
