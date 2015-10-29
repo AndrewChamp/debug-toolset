@@ -19,7 +19,7 @@ $debug->versionCheck('5.3.0');
 $debug->printArray($myArray);
 ```
 
-### Display framework files
+### Display framework files on screen for referrencing
 ```php
 $directories = array('templates/', 'plugins/');
 $debug->debugBar($directories);
@@ -37,5 +37,5 @@ $debug->allVars($class);
 
 ### Output all the methods in a class
 ```php
-$debug->allMehtods($class);
+$debug->allMethods($class);
 ```
