@@ -20,7 +20,7 @@ public $development = array(
 ```
 
 ### Output array
-This method will output your array in '<pre>' tags for readability.  Like all the other methods & properties in this class, this output is only visible to the IP's listed in the $development array.
+This method will output your array in _<pre>_ tags for readability.  Like all the other methods & properties in this class, this output is only visible to the IP's listed in the $development array.
 ```php
 $debug->printArray($myArray);
 ```
