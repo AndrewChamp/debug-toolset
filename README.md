@@ -9,14 +9,24 @@ This class helps with outputting info the developer sends to it; but it will nev
 $debug = debug::obtain();
 ```
 
-### Halt processing if a PHP version is required
+### Add your IP's to the $development array in the class
+There's an example in the class.  You can leave the ending octet blank to act as a "wildcard" for IP blocks.
 ```php
-$debug->versionCheck('5.3.0');
+public $development = array(
+	'Work'			=> '123.34.678.',	//Note: You can leave the ending octet blank to act as a "wildcard" for IP blocks.
+	'Home'			=> '98.765.43.21',
+	'Cafe'			=> '101.01.010.1'
+);
 ```
 
 ### Output array
 ```php
 $debug->printArray($myArray);
+```
+
+### Halt processing if a PHP version is required
+```php
+$debug->versionCheck('5.3.0');
 ```
 
 ### Display framework files on screen for referrencing
