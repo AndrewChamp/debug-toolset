@@ -19,35 +19,35 @@ public $development = array(
 );
 ```
 
-### Output array
+#### Output array
 This method will output your array in _pre_ tags for readability.  Like all the other methods & properties in this class, this output is only visible to the IP's listed in the $development array.
 ```php
 $debug->printArray($myArray);
 ```
 
-### Halt processing if a PHP version is required
+#### Halt processing if a PHP version is required
 If your script / framework requires a PHP version minimum then you can use this method to enforce it.
 ```php
 $debug->versionCheck('5.3.0');
 ```
 
-### Display framework files on screen for referrencing
+#### Display framework files on screen for referrencing
 ```php
 $directories = array('templates/', 'plugins/');
 $debug->debugBar($directories);
 ```
 
-### Output all your defines
+#### Output all your defines
 ```php
 $debug->allDefines();
 ```
 
-### Output all the properties in a class
+#### Output all the properties in a class
 ```php
 $debug->allVars($class);
 ```
 
-### Output all the methods in a class
+#### Output all the methods in a class
 ```php
 $debug->allMethods($class);
 ```
